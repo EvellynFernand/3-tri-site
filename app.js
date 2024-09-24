@@ -3,3 +3,9 @@ function criaCartao(categoria, pergunta, resposta) {
     let cartao = document.createElement('article')
     cartao.className = 'cartao'
 }
+function viraCartao() {
+    respostaEstaVisivel = !respostaEstaVisivel
+    cartao.classList.toggle('active', respostaEstaVisivel)
+}
+cartao.addEventListener('click', viraCartao)
+let respostaEstaVisivel = false
